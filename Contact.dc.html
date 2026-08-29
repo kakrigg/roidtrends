@@ -19,7 +19,7 @@ input,textarea,button{font-family:'Archivo',sans-serif}
 </style>
 </helmet>
 <div style="height:10px;background:#48055E"></div>
-<header style="max-width:1440px;margin:0 auto;padding:28px 80px;display:flex;justify-content:space-between;align-items:flex-start;gap:24px">
+<header style="max-width:1440px;margin:0 auto;padding:28px clamp(20px,5vw,80px);display:flex;justify-content:space-between;align-items:flex-start;gap:24px">
   <nav style="display:flex;gap:32px;flex-wrap:wrap;font-family:'Archivo Narrow',sans-serif;text-transform:uppercase;letter-spacing:0.22em;font-size:13px;font-weight:600;padding-top:6px">
     <a href="Home.dc.html" style="color:#B96FD8">Home</a>
     <a href="About.dc.html" style="color:#B96FD8">About</a>
@@ -28,12 +28,12 @@ input,textarea,button{font-family:'Archivo',sans-serif}
     <a href="Contact.dc.html" style="color:#FFFFFF">Contact</a>
   </nav>
   <a href="Home.dc.html" aria-label="ROIDTrends home" style="display:flex;flex-direction:column;align-items:flex-start;gap:4px;color:#FFFFFF">
-    <img src="assets/roidtrends-logo-white.svg" alt="ROIDTrends" style="width: 332px; height: 357px; display: block">
+    <img src="assets/roidtrends-logo-white.svg" alt="ROIDTrends" style="width:clamp(120px,26vw,332px);height:auto;display:block">
     
   </a>
 </header>
 <main>
-  <section style="max-width:1440px;margin:0 auto;padding:64px 80px 88px">
+  <section style="max-width:1440px;margin:0 auto;padding:64px clamp(20px,5vw,80px) 88px">
     <div>
       <p style="margin:0 0 24px;font-family:'Archivo Narrow',sans-serif;text-transform:uppercase;letter-spacing:0.22em;font-size:13px;font-weight:600;color:#B96FD8">Contact</p>
       <h1 style="margin:0;max-width:14ch;font-size:clamp(40px,4.8vw,64px);line-height:1.0;font-weight:800;color:#FFFFFF;text-wrap:balance">Talk to the team.</h1>
@@ -59,7 +59,7 @@ input,textarea,button{font-family:'Archivo',sans-serif}
   </section>
 </main>
 <footer style="border-top:1px solid #44444C">
-  <div style="max-width:1440px;margin:0 auto;padding:56px 80px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:48px">
+  <div style="max-width:1440px;margin:0 auto;padding:56px clamp(20px,5vw,80px);display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:48px">
     <div>
       <span style="font-weight:800;font-size:15px;line-height:0.95;letter-spacing:0.04em;color:#FFFFFF">ROID<br>TRENDS</span>
       <p style="margin:16px 0 0;font-size:14px;color:#6A6A72;max-width:38ch;text-wrap:pretty">Real World Observations of Image and Performance Enhancing Drug Trends. A research program of The University of Queensland, delivered with PEDTest, QuIVAA and QuIHN.</p>
