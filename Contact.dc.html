@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&amp;family=Archivo+Narrow:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0A0A0A;color:#B8B8BE;font-family:'Archivo',sans-serif;font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:#B96FD8;text-decoration:none}
+a:hover{color:#FFFFFF}
+::selection{background:#48055E;color:#FFFFFF}
+:focus-visible{outline:2px solid #B96FD8;outline-offset:2px}
+input,textarea,button{font-family:'Archivo',sans-serif}
+</style>
+</helmet>
+<div style="height:10px;background:#48055E"></div>
+<header style="max-width:1440px;margin:0 auto;padding:28px 80px;display:flex;justify-content:space-between;align-items:flex-start;gap:24px">
+  <nav style="display:flex;gap:32px;flex-wrap:wrap;font-family:'Archivo Narrow',sans-serif;text-transform:uppercase;letter-spacing:0.22em;font-size:13px;font-weight:600;padding-top:6px">
+    <a href="Home.dc.html" style="color:#B96FD8">Home</a>
+    <a href="About.dc.html" style="color:#B96FD8">About</a>
+    <a href="Findings.dc.html" style="color:#B96FD8">Findings</a>
+    <a href="Resources.dc.html" style="color:#B96FD8">Resources</a>
+    <a href="Contact.dc.html" style="color:#FFFFFF">Contact</a>
+  </nav>
+  <a href="Home.dc.html" aria-label="ROIDTrends home" style="display:flex;flex-direction:column;align-items:flex-start;gap:4px;color:#FFFFFF">
+    <img src="assets/roidtrends-logo-white.svg" alt="ROIDTrends" style="width: 332px; height: 357px; display: block">
+    
+  </a>
+</header>
+<main>
+  <section style="max-width:1440px;margin:0 auto;padding:64px 80px 88px">
+    <div>
+      <p style="margin:0 0 24px;font-family:'Archivo Narrow',sans-serif;text-transform:uppercase;letter-spacing:0.22em;font-size:13px;font-weight:600;color:#B96FD8">Contact</p>
+      <h1 style="margin:0;max-width:14ch;font-size:clamp(40px,4.8vw,64px);line-height:1.0;font-weight:800;color:#FFFFFF;text-wrap:balance">Talk to the team.</h1>
+      <p style="margin:28px 0 0;max-width:52ch;font-size:19px;line-height:1.5;text-wrap:pretty">Get in touch below.</p>
+      <div style="margin-top:48px;display:flex;flex-direction:column;gap:28px">
+        <div>
+          <p style="margin:0 0 6px;font-family:'Archivo Narrow',sans-serif;text-transform:uppercase;letter-spacing:0.22em;font-size:12px;font-weight:700;color:#B96FD8">General enquiries</p>
+          <p style="margin:0 0 4px;font-size:17px;font-weight:700;color:#FFFFFF">Dr Timothy Piatkowski</p>
+          <a href="mailto:t.piatkowski@uq.edu.au" style="font-size:19px;font-weight:700">t.piatkowski@uq.edu.au</a>
+        </div>
+        <div>
+          <p style="margin:0 0 4px;font-size:17px;font-weight:700;color:#FFFFFF">Kim Akrigg</p>
+          <a href="mailto:k.akrigg@uq.edu.au" style="font-size:19px;font-weight:700">k.akrigg@uq.edu.au</a>
+          
+        </div>
+        <div>
+          <p style="margin:0 0 6px;font-family:'Archivo Narrow',sans-serif;text-transform:uppercase;letter-spacing:0.22em;font-size:12px;font-weight:700;color:#B96FD8">Host institution</p>
+          <p style="margin:0;font-size:16px">The University of Queensland<br>St Lucia QLD 4072, Australia</p>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+</main>
+<footer style="border-top:1px solid #44444C">
+  <div style="max-width:1440px;margin:0 auto;padding:56px 80px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:48px">
+    <div>
+      <span style="font-weight:800;font-size:15px;line-height:0.95;letter-spacing:0.04em;color:#FFFFFF">ROID<br>TRENDS</span>
+      <p style="margin:16px 0 0;font-size:14px;color:#6A6A72;max-width:38ch;text-wrap:pretty">Real World Observations of Image and Performance Enhancing Drug Trends. A research program of The University of Queensland, delivered with PEDTest, QuIVAA and QuIHN.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:10px;font-size:15px">
+      <a href="About.dc.html">About the Study</a>
+      <a href="Findings.dc.html">Research Findings</a>
+      <a href="Resources.dc.html">Harm Reduction Resources</a>
+      <a href="Contact.dc.html">Contact</a>
+    </div>
+    <div>
+      <p style="margin:0;font-size:13px;color:#6A6A72;max-width:44ch;text-wrap:pretty">We supply information, never instruction. What you do with it is your decision. ROIDTrends acknowledges the Traditional Owners of the lands on which we work, and pays respect to Elders past and present.</p>
+      <p style="margin:14px 0 0;font-size:13px;color:#6A6A72">© ROIDTrends 2026</p>
+    </div>
+  </div>
+</footer>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { topic: 'The study', sent: false };
+  renderVals() {
+    const base = { minHeight: 44, padding: '0 18px', fontSize: 15, fontWeight: 700, cursor: 'pointer', background: '#FFFFFF', border: '1px solid #B8B8BE', color: '#44444C' };
+    const on = { ...base, background: '#48055E', border: '1px solid #48055E', color: '#FFFFFF' };
+    const s = this.state.topic;
+    const pick = (t) => () => this.setState({ topic: t });
+    return {
+      sent: this.state.sent,
+      send: () => this.setState({ sent: true }),
+      pickStudy: pick('The study'), pickData: pick('Data & findings'), pickMedia: pick('Media'), pickOther: pick('Other'),
+      topicStudyStyle: s === 'The study' ? on : base,
+      topicDataStyle: s === 'Data & findings' ? on : base,
+      topicMediaStyle: s === 'Media' ? on : base,
+      topicOtherStyle: s === 'Other' ? on : base
+    };
+  }
+}
+</script>
+</body>
+</html>

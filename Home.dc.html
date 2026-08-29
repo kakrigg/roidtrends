@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&amp;family=Archivo+Narrow:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>
+body{margin:0;background:#0A0A0A;color:#B8B8BE;font-family:'Archivo',sans-serif;font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:#B96FD8;text-decoration:none}
+a:hover{color:#FFFFFF}
+::selection{background:#48055E;color:#FFFFFF}
+:focus-visible{outline:2px solid #B96FD8;outline-offset:2px}
+</style>
+</helmet>
+<div style="height:10px;background:#48055E"></div>
+<sc-if value="{{ showAlertBar }}" hint-placeholder-val="{{ false }}">
+  <div style="background:#48055E;color:#FFFFFF;padding:12px 0">
+    <div style="max-width:1440px;margin:0 auto;padding:0 80px;display:flex;gap:16px;align-items:baseline;flex-wrap:wrap">
+      <span style="font-family:'Archivo Narrow',sans-serif;text-transform:uppercase;letter-spacing:0.22em;font-size:12px;font-weight:700;color:#FFFFFF">Drug alert</span>
+      <span style="font-size:15px;color:#F2EEF5">A current alert would appear here, with a link to the full notice.</span>
+      <a href="Findings.dc.html" style="font-size:15px;color:#FFFFFF;font-weight:600">Read more →</a>
+    </div>
+  </div>
+</sc-if>
+<header style="max-width:1440px;margin:0 auto;padding:28px 80px;display:flex;justify-content:space-between;align-items:center;gap:24px">
+  <nav style="display:flex;gap:32px;flex-wrap:wrap;font-family:'Archivo Narrow',sans-serif;text-transform:uppercase;letter-spacing:0.22em;font-size:13px;font-weight:600">
+    <a href="Home.dc.html" style="color:#FFFFFF">Home</a>
+    <a href="About.dc.html" style="color:#B96FD8">About</a>
+    <a href="Findings.dc.html" style="color:#B96FD8">Findings</a>
+    <a href="Resources.dc.html" style="color:#B96FD8">Resources</a>
+    <a href="Contact.dc.html" style="color:#B96FD8">Contact</a>
+  </nav>
+  <a href="Home.dc.html" aria-label="ROIDTrends home" style="display:block">
+    <img src="assets/roidtrends-logo-white.svg" alt="ROIDTrends" style="width: 332px; height: 357px; display: block">
+  </a>
+</header>
+<main>
+  <section style="max-width:1440px;margin:0 auto;padding:56px 80px 88px">
+    <p style="margin:0 0 28px;font-family:'Archivo Narrow',sans-serif;text-transform:uppercase;letter-spacing:0.22em;font-size:13px;font-weight:600;color:#B96FD8">The University of Queensland · IPED market monitoring</p>
+    <h1 style="margin:0;max-width:22ch;font-size:clamp(44px,5.4vw,80px);line-height:1.0;font-weight:800;color:#FFFFFF;text-wrap:balance">Reducing harms for people who use image and performance enhancing drugs</h1>
+    <p style="margin:36px 0 0;max-width:62ch;font-size:21px;line-height:1.5;color:#B8B8BE;text-wrap:pretty">ROIDTrends: Real World Observations of Image and Performance Enhancing Drug Trends, turns community drug-checking results into public data on the substances circulating in Australia's unregulated IPED market.</p>
+    <div style="display:flex;gap:16px;margin-top:44px;flex-wrap:wrap">
+      <a href="https://doi.org/10.14264/8651cba" target="_blank" style="display:inline-flex;align-items:center;min-height:44px;padding:0 28px;background:#48055E;color:#FFFFFF;font-weight:700;font-size:16px" style-hover="background:#B96FD8;color:#0A0A0A">Read the Latest Bulletin</a>
+    </div>
+  </section>
+  <sc-if value="{{ marqueeOn }}" hint-placeholder-val="{{ true }}">
+    <a href="https://redcap.rdm.uq.edu.au/surveys/?s=7MD9TKEFL7JMP3JL" target="_blank" style="display:block;background:#48055E" style-hover="background:#B96FD8">
+      <div style="max-width:1440px;margin:0 auto;padding:20px 80px;display:flex;justify-content:space-between;align-items:center;gap:24px">
+        <span style="font-size:clamp(22px,2.4vw,32px);font-weight:800;color:#FFFFFF;text-transform:uppercase;letter-spacing:0.02em">Do the ROIDTrends Survey</span>
+        <span aria-hidden="true" style="font-size:28px;font-weight:800;color:#FFFFFF">→</span>
+      </div>
+    </a>
+  </sc-if>
+  <section style="max-width:1440px;margin:0 auto;padding:88px 80px">
+    <p style="margin:0 0 20px;font-family:'Archivo Narrow',sans-serif;text-transform:uppercase;letter-spacing:0.22em;font-size:13px;font-weight:600;color:#B96FD8">What we do</p>
+    <h2 style="margin:0 0 56px;font-size:clamp(32px,3.5vw,52px);line-height:1.0;font-weight:800;color:#FFFFFF;max-width:26ch;text-wrap:balance">The ROIDTrends program raises awareness on IPED market trends in Australia</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:48px">
+      <div style="border-top:3px solid #48055E;padding-top:24px">
+        <h3 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#FFFFFF;line-height:1.15">Monitor the market</h3>
+        <p style="margin:0;text-wrap:pretty">Community members test products with PEDTest reagent kits and submit the results. Each submission records the drug, the formulation, what the label claimed and what the test found.</p>
+      </div>
+      <div style="border-top:3px solid #48055E;padding-top:24px">
+        <h3 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#FFFFFF;line-height:1.15">Survey in context</h3>
+        <p style="margin:0;text-wrap:pretty">A short survey at the point of submission captures how people use IPEDs, what they do with test results, and how access to services changes over time, anonymously, linked across submissions.</p>
+      </div>
+      <div style="border-top:3px solid #48055E;padding-top:24px">
+        <h3 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#FFFFFF;line-height:1.15">Share what we find</h3>
+        <p style="margin:0;text-wrap:pretty">Findings are published in rolling surveillance summaries and bulletins.</p>
+      </div>
+    </div>
+    <div style="display:flex;gap:16px;margin-top:56px;flex-wrap:wrap">
+      <a href="Findings.dc.html" style="display:inline-flex;align-items:center;min-height:52px;padding:0 32px;background:#48055E;color:#FFFFFF;font-weight:700;font-size:17px" style-hover="background:#B96FD8;color:#0A0A0A">Our Research Findings</a>
+      <a href="About.dc.html" style="display:inline-flex;align-items:center;min-height:52px;padding:0 32px;border:2px solid #B96FD8;color:#B96FD8;font-weight:700;font-size:17px" style-hover="border-color:#FFFFFF;color:#FFFFFF">Our Team</a>
+      <a href="Contact.dc.html" style="display:inline-flex;align-items:center;min-height:52px;padding:0 32px;border:2px solid #B96FD8;color:#B96FD8;font-weight:700;font-size:17px" style-hover="border-color:#FFFFFF;color:#FFFFFF">Contact Us</a>
+    </div>
+  </section>
+  <section style="border-top:1px solid #44444C">
+    <div style="max-width:1440px;margin:0 auto;padding:88px 80px">
+      <p style="margin:0 0 20px;font-family:'Archivo Narrow',sans-serif;text-transform:uppercase;letter-spacing:0.22em;font-size:13px;font-weight:600;color:#B96FD8">Latest news</p>
+      <h2 style="margin:0 0 56px;font-size:clamp(32px,3.5vw,52px);line-height:1.0;font-weight:800;color:#FFFFFF;max-width:22ch;text-wrap:balance">ROIDTrends research in the news.</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px">
+        <article style="display:flex;flex-direction:column;gap:14px">
+          <a href="https://www.abc.net.au/news/2026-08-28/black-market-peptides-dangerous-doses/107059092" target="_blank" style="display:block">
+            <img src="https://live-production.wcms.abc-cdn.net.au/9a7f79eb2401ce11f88047f5db3dd53e?impolicy=wcms_crop_resize&amp;cropH=2688&amp;cropW=4032&amp;xPos=0&amp;yPos=168&amp;width=862&amp;height=575" alt="Small glass vials with labels" style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;background:#1C1C24">
+          </a>
+          <p style="margin:0;font-family:'Archivo Narrow',sans-serif;text-transform:uppercase;letter-spacing:0.22em;font-size:12px;font-weight:700;color:#B96FD8">ABC News · 28 Aug 2026</p>
+          <h3 style="margin:0;font-size:21px;line-height:1.2;font-weight:700;color:#FFFFFF;text-wrap:balance">New testing of black market peptides reveals dangerous dosing levels</h3>
+          <a href="https://www.abc.net.au/news/2026-08-28/black-market-peptides-dangerous-doses/107059092" target="_blank" style="font-weight:700;font-size:16px">Read the Article →</a>
+        </article>
+        <article style="display:flex;flex-direction:column;gap:14px">
+          <a href="https://www.abc.net.au/listen/programs/am/black-market-peptide-safety-fears/107088110" target="_blank" style="display:block">
+            <img src="https://live-production.wcms.abc-cdn.net.au/6d9371769f5dd0770f572d6318d5461c?impolicy=wcms_crop_resize&amp;cropH=763&amp;cropW=1356&amp;xPos=0&amp;yPos=180&amp;width=862&amp;height=485" alt="A chemist holds a test tube and dropper" style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;background:#1C1C24">
+          </a>
+          <p style="margin:0;font-family:'Archivo Narrow',sans-serif;text-transform:uppercase;letter-spacing:0.22em;font-size:12px;font-weight:700;color:#B96FD8">ABC Radio · AM · 28 Aug 2026</p>
+          <h3 style="margin:0;font-size:21px;line-height:1.2;font-weight:700;color:#FFFFFF;text-wrap:balance">Black-market peptide safety fears</h3>
+          <a href="https://www.abc.net.au/listen/programs/am/black-market-peptide-safety-fears/107088110" target="_blank" style="font-weight:700;font-size:16px">Listen →</a>
+        </article>
+        <article style="display:flex;flex-direction:column;gap:14px">
+          <a href="https://www.abc.net.au/news/2026-07-20/the-race-to-reverse-aging/106937238" target="_blank" style="display:block">
+            <img src="https://live-production.wcms.abc-cdn.net.au/65d6e67ee3722b29c3f5ea2f1f7c713b?impolicy=wcms_crop_resize&amp;cropH=2025&amp;cropW=3600&amp;xPos=0&amp;yPos=0&amp;width=862&amp;height=485" alt="The Race to Reverse Aging, Four Corners" style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;background:#1C1C24">
+          </a>
+          <p style="margin:0;font-family:'Archivo Narrow',sans-serif;text-transform:uppercase;letter-spacing:0.22em;font-size:12px;font-weight:700;color:#B96FD8">ABC Four Corners · 20 Jul 2026</p>
+          <h3 style="margin:0;font-size:21px;line-height:1.2;font-weight:700;color:#FFFFFF;text-wrap:balance">The Race to Reverse Aging</h3>
+          <a href="https://www.abc.net.au/news/2026-07-20/the-race-to-reverse-aging/106937238" target="_blank" style="font-weight:700;font-size:16px">Watch →</a>
+        </article>
+        <article style="display:flex;flex-direction:column;gap:14px">
+          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13445994/" target="_blank" style="display:block">
+            <img src="assets/article-tile.svg" alt="ROIDTrends journal article" style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;background:#48055E">
+          </a>
+          <p style="margin:0;font-family:'Archivo Narrow',sans-serif;text-transform:uppercase;letter-spacing:0.22em;font-size:12px;font-weight:700;color:#B96FD8">Drug and Alcohol Review · 2026</p>
+          <h3 style="margin:0;font-size:21px;line-height:1.2;font-weight:700;color:#FFFFFF;text-wrap:balance">Composition and labelling accuracy of products sold as retatrutide in Australia</h3>
+          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13445994/" target="_blank" style="font-weight:700;font-size:16px">Read the Paper →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section style="border-top:1px solid #44444C">
+    <div style="max-width:1440px;margin:0 auto;padding:72px 80px">
+      <p style="margin:0 0 28px;font-family:'Archivo Narrow',sans-serif;text-transform:uppercase;letter-spacing:0.22em;font-size:13px;font-weight:600;color:#B96FD8">Delivered in partnership</p>
+      <div style="display:flex;gap:56px;flex-wrap:wrap;align-items:baseline">
+        <span style="font-size:22px;font-weight:800;color:#FFFFFF">The University of Queensland</span>
+        <span style="font-size:22px;font-weight:800;color:#FFFFFF">PEDTest</span>
+        <span style="font-size:22px;font-weight:800;color:#FFFFFF">QuIVAA</span>
+        <span style="font-size:22px;font-weight:800;color:#FFFFFF">QuIHN</span>
+        <span style="font-size:22px;font-weight:800;color:#FFFFFF">Queensland Mental Health Commission</span>
+      </div>
+    </div>
+  </section>
+</main>
+<footer style="border-top:1px solid #44444C">
+  <div style="max-width:1440px;margin:0 auto;padding:56px 80px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:48px">
+    <div>
+      <img src="assets/roidtrends-logo-white.svg" alt="ROIDTrends" style="width:88px;height:88px;display:block">
+      <p style="margin:16px 0 0;font-size:14px;color:#6A6A72;max-width:38ch;text-wrap:pretty">Real World Observations of Image and Performance Enhancing Drug Trends. A research program of The University of Queensland, delivered with PEDTest, QuIVAA, QuIHN and the Queensland Mental Health Commission.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:10px;font-size:15px">
+      <a href="About.dc.html">About the Study</a>
+      <a href="Findings.dc.html">Research Findings</a>
+      <a href="Resources.dc.html">Harm Reduction Resources</a>
+      <a href="Contact.dc.html">Contact</a>
+    </div>
+    <div>
+      <p style="margin:0;font-size:13px;color:#6A6A72;max-width:44ch;text-wrap:pretty">ROIDTrends acknowledges the Traditional Owners of the lands on which we work, and pays respect to Elders past, present, and emerging.</p>
+      <p style="margin:14px 0 0;font-size:13px;color:#6A6A72">© ROIDTrends 2026</p>
+    </div>
+  </div>
+</footer>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showAlertBar&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Header&quot;},&quot;marqueeOn&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Header&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      showAlertBar: this.props.showAlertBar ?? false,
+      marqueeOn: this.props.marqueeOn ?? true
+    };
+  }
+}
+</script>
+</body>
+</html>

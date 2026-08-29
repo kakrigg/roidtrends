@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Archivo+Narrow:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0A0A0A;color:#B8B8BE;font-family:'Archivo',sans-serif;font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:#B96FD8;text-decoration:none}
+a:hover{color:#FFFFFF}
+::selection{background:#48055E;color:#FFFFFF}
+:focus-visible{outline:2px solid #B96FD8;outline-offset:2px}
+</style>
+</helmet>
+<div style="height:10px;background:#48055E"></div>
+<header style="max-width:1440px;margin:0 auto;padding:28px 80px;display:flex;justify-content:space-between;align-items:flex-start;gap:24px">
+  <nav style="display:flex;gap:32px;flex-wrap:wrap;font-family:'Archivo Narrow',sans-serif;text-transform:uppercase;letter-spacing:0.22em;font-size:13px;font-weight:600;padding-top:6px">
+    <a href="Home.dc.html" style="color:#B96FD8">Home</a>
+    <a href="About.dc.html" style="color:#B96FD8">About</a>
+    <a href="Findings.dc.html" style="color:#B96FD8">Findings</a>
+    <a href="Resources.dc.html" style="color:#FFFFFF">Resources</a>
+    <a href="Contact.dc.html" style="color:#B96FD8">Contact</a>
+  </nav>
+  <a href="Home.dc.html" aria-label="ROIDTrends home" style="display:flex;flex-direction:column;align-items:flex-start;gap:4px;color:#FFFFFF">
+    <img src="assets/roidtrends-logo-white.svg" alt="ROIDTrends" style="width: 332px; height: 357px; display: block" />
+    
+  </a>
+</header>
+<main>
+  <section style="max-width:1440px;margin:0 auto;padding:64px 80px 56px">
+    <p style="margin:0 0 24px;font-family:'Archivo Narrow',sans-serif;text-transform:uppercase;letter-spacing:0.22em;font-size:13px;font-weight:600;color:#B96FD8">Harm reduction resources</p>
+    <h1 style="margin:0;max-width:20ch;font-size:clamp(40px,4.8vw,64px);line-height:1.0;font-weight:800;color:#FFFFFF;text-wrap:balance">Safe and confidential advice</h1>
+    <p style="margin:32px 0 0;max-width:62ch;font-size:21px;line-height:1.5;text-wrap:pretty">Harm reduction resources for people who use IPEDs.</p>
+  </section>
+  <section style="max-width:1440px;margin:0 auto;padding:0 80px 88px">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+      <div style="border:1px solid #44444C;padding:32px;display:flex;flex-direction:column;gap:14px">
+        <p style="margin:0;font-family:'Archivo Narrow',sans-serif;text-transform:uppercase;letter-spacing:0.22em;font-size:12px;font-weight:700;color:#B96FD8">Test a product</p>
+        <h2 style="margin:0;font-size:26px;line-height:1.1;font-weight:700;color:#FFFFFF">PEDTest</h2>
+        <p style="margin:0;font-size:16px;flex:1;text-wrap:pretty">Australia's dedicated IPED checking service. Reagent kits let you check what a product holds before deciding what to do with it, and submitting your result adds to the public picture.</p>
+        <a href="https://pedtestaustralia.com/" target="_blank" style="font-weight:700;font-size:16px">Visit PEDTest →</a>
+      </div>
+      <div style="border:1px solid #44444C;padding:32px;display:flex;flex-direction:column;gap:14px">
+        <p style="margin:0;font-family:'Archivo Narrow',sans-serif;text-transform:uppercase;letter-spacing:0.22em;font-size:12px;font-weight:700;color:#B96FD8">Peer support</p>
+        <h2 style="margin:0;font-size:26px;line-height:1.1;font-weight:700;color:#FFFFFF">QuIVAA</h2>
+        <p style="margin:0;font-size:16px;flex:1;text-wrap:pretty">Queensland's peer-based drug user organisation, advocacy, peer education and support run by and for people who use drugs.</p>
+        <a href="https://quivaa.org.au/" style="font-weight:700;font-size:16px">Visit QuIVAA →</a>
+      </div>
+      <div style="border:1px solid #44444C;padding:32px;display:flex;flex-direction:column;gap:14px">
+        <p style="margin:0;font-family:'Archivo Narrow',sans-serif;text-transform:uppercase;letter-spacing:0.22em;font-size:12px;font-weight:700;color:#B96FD8">Health services</p>
+        <h2 style="margin:0;font-size:26px;line-height:1.1;font-weight:700;color:#FFFFFF">QuIHN</h2>
+        <p style="margin:0;font-size:16px;flex:1;text-wrap:pretty">The Queensland Injectors Health Network, free health services for people who use drugs, including clinical care, counselling and sterile injecting equipment.</p>
+        <a href="https://www.quihn.org/" style="font-weight:700;font-size:16px">Visit QuIHN →</a>
+      </div>
+      <div style="border:1px solid #44444C;padding:32px;display:flex;flex-direction:column;gap:14px">
+        <p style="margin:0;font-family:'Archivo Narrow',sans-serif;text-transform:uppercase;letter-spacing:0.22em;font-size:12px;font-weight:700;color:#B96FD8">Peer network</p>
+        <h2 style="margin:0;font-size:26px;line-height:1.1;font-weight:700;color:#FFFFFF">Steroid QNECT</h2>
+        <p style="margin:0;font-size:16px;flex:1;text-wrap:pretty">A Queensland peer network for people who use performance and image enhancing drugs, education, connection and honest information from peers.</p>
+        <a href="https://quivaa.org.au/advocacy-action/" target="_blank" style="font-weight:700;font-size:16px">Find Steroid QNECT →</a>
+      </div>
+      <div style="border:1px solid #44444C;padding:32px;display:flex;flex-direction:column;gap:14px">
+        <p style="margin:0;font-family:'Archivo Narrow',sans-serif;text-transform:uppercase;letter-spacing:0.22em;font-size:12px;font-weight:700;color:#B96FD8">Equipment</p>
+        <h2 style="margin:0;font-size:26px;line-height:1.1;font-weight:700;color:#FFFFFF">Find an NSP</h2>
+        <p style="margin:0;font-size:16px;flex:1;text-wrap:pretty">Needle and syringe programs across metropolitan and regional Queensland supply sterile equipment and are a low-barrier door into other services.</p>
+        <a href="https://www.quihn.org/where-we-are/" target="_blank" style="font-weight:700;font-size:16px">NSP Locations →</a>
+      </div>
+      <div style="border:1px solid #44444C;padding:32px;display:flex;flex-direction:column;gap:14px">
+        <p style="margin:0;font-family:'Archivo Narrow',sans-serif;text-transform:uppercase;letter-spacing:0.22em;font-size:12px;font-weight:700;color:#B96FD8">Evidence</p>
+        <h2 style="margin:0;font-size:26px;line-height:1.1;font-weight:700;color:#FFFFFF">Our bulletins</h2>
+        <p style="margin:0;font-size:16px;flex:1;text-wrap:pretty">Plain-language summaries of what's circulating in the market, sample sizes and limits stated every time.</p>
+        <a href="Findings.dc.html" style="font-weight:700;font-size:16px">Research Findings →</a>
+      </div>
+    </div>
+  </section>
+  <section style="border-top:1px solid #44444C">
+    <div style="max-width:1440px;margin:0 auto;padding:64px 80px;display:flex;justify-content:space-between;align-items:center;gap:32px;flex-wrap:wrap">
+      <div>
+        <h2 style="margin:0;font-size:clamp(28px,3vw,40px);font-weight:800;color:#FFFFFF;max-width:28ch;text-wrap:balance">Work in peer or clinical services?</h2>
+        <p style="margin:12px 0 0;max-width:54ch;text-wrap:pretty">We develop workforce-facing summaries and briefings with our partners. Tell us what formats would be useful to you.</p>
+      </div>
+      <a href="Contact.dc.html" style="display:inline-flex;align-items:center;min-height:44px;padding:0 28px;background:#48055E;color:#FFFFFF;font-weight:700;font-size:16px" style-hover="background:#B96FD8;color:#FFFFFF">Contact the Team</a>
+    </div>
+  </section>
+</main>
+<footer style="border-top:1px solid #44444C">
+  <div style="max-width:1440px;margin:0 auto;padding:56px 80px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:48px">
+    <div>
+      <span style="font-weight:800;font-size:15px;line-height:0.95;letter-spacing:0.04em;color:#FFFFFF">ROID<br>TRENDS</span>
+      <p style="margin:16px 0 0;font-size:14px;color:#6A6A72;max-width:38ch;text-wrap:pretty">Real World Observations of Image and Performance Enhancing Drug Trends. A research program of The University of Queensland, delivered with PEDTest, QuIVAA and QuIHN.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:10px;font-size:15px">
+      <a href="About.dc.html">About the Study</a>
+      <a href="Findings.dc.html">Research Findings</a>
+      <a href="Resources.dc.html">Harm Reduction Resources</a>
+      <a href="Contact.dc.html">Contact</a>
+    </div>
+    <div>
+      <p style="margin:0;font-size:13px;color:#6A6A72;max-width:44ch;text-wrap:pretty">We supply information, never instruction. What you do with it is your decision. ROIDTrends acknowledges the Traditional Owners of the lands on which we work, and pays respect to Elders past and present.</p>
+      <p style="margin:14px 0 0;font-size:13px;color:#6A6A72">© ROIDTrends 2026</p>
+    </div>
+  </div>
+</footer>
+</x-dc>
+</body>
+</html>
