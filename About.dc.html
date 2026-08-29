@@ -15,14 +15,24 @@ a{color:#B96FD8;text-decoration:none}
 a:hover{color:#FFFFFF}
 ::selection{background:#48055E;color:#FFFFFF}
 :focus-visible{outline:2px solid #B96FD8;outline-offset:2px}
+.navdrop{position:relative}
+.navdrop-menu{display:none;position:absolute;top:100%;left:-20px;padding-top:14px;z-index:50}
+.navdrop:hover .navdrop-menu,.navdrop:focus-within .navdrop-menu{display:block}
 </style>
 </helmet>
 <div style="height:10px;background:#48055E"></div>
-<header style="max-width:1440px;margin:0 auto;padding:28px clamp(20px,5vw,80px);display:flex;justify-content:space-between;align-items:flex-start;gap:24px">
+<header style="max-width:1440px;margin:0 auto;padding:28px clamp(20px,5vw,80px);display:flex;justify-content:space-between;align-items:flex-start;gap:24px;flex-wrap:wrap">
   <nav style="display:flex;gap:32px;flex-wrap:wrap;font-family:'Archivo Narrow',sans-serif;text-transform:uppercase;letter-spacing:0.22em;font-size:13px;font-weight:600;padding-top:6px">
     <a href="Home.dc.html" style="color:#B96FD8">Home</a>
     <a href="About.dc.html" style="color:#FFFFFF">About</a>
-    <a href="Findings.dc.html" style="color:#B96FD8">Findings</a>
+    <div class="navdrop">
+      <a href="Findings.dc.html" style="color:#B96FD8">Findings <span aria-hidden="true" style="font-size:10px">▾</span></a>
+      <div class="navdrop-menu">
+        <div style="background:#141416;border:1px solid #44444C;min-width:200px">
+          <a href="Bulletins.dc.html" style="display:block;padding:14px 20px;color:#FFFFFF;white-space:nowrap" style-hover="background:#48055E">Bulletins</a>
+        </div>
+      </div>
+    </div>
     <a href="Resources.dc.html" style="color:#B96FD8">Resources</a>
     <a href="Contact.dc.html" style="color:#B96FD8">Contact</a>
   </nav>
@@ -37,7 +47,7 @@ a:hover{color:#FFFFFF}
     <h1 style="margin:0;max-width:18ch;font-size:clamp(40px,4.8vw,64px);line-height:1.0;font-weight:800;color:#FFFFFF;text-wrap:balance">A market this size shouldn't be invisible.</h1>
     <p style="margin:32px 0 0;max-width:64ch;font-size:21px;line-height:1.5;text-wrap:pretty">Anabolic-androgenic steroids, peptides and other image- and performance-enhancing drugs are used by a diverse population across Australia: for appearance, performance, recovery and wellbeing. Yet IPEDs sit at the edge of mainstream drug surveillance, so people navigate an unregulated market with almost no reliable information about what's actually in circulation.</p>
   </section>
-  <section style="max-width:1440px;margin:0 auto;padding:0 80px 88px;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:56px">
+  <section style="max-width:1440px;margin:0 auto;padding:0 clamp(20px,5vw,80px) 88px;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:56px">
     <div>
       <h2 style="margin:0 0 16px;font-size:32px;line-height:1.15;font-weight:700;color:#FFFFFF">The gap</h2>
       <p style="margin:0 0 16px;text-wrap:pretty">Drug checking has become an established harm reduction response to unregulated markets, but its application to IPEDs has lagged well behind opioids, stimulants and festival settings. In Australia, PEDTest is the only dedicated IPED checking service, and the community data it generates has never been systematically analysed.</p>
@@ -95,12 +105,14 @@ a:hover{color:#FFFFFF}
 <footer style="border-top:1px solid #44444C">
   <div style="max-width:1440px;margin:0 auto;padding:56px clamp(20px,5vw,80px);display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:48px">
     <div>
-      <span style="font-weight:800;font-size:15px;line-height:0.95;letter-spacing:0.04em;color:#FFFFFF">ROID<br>TRENDS</span>
+      <img src="assets/roidtrends-logo-white.svg" alt="ROIDTrends" style="width:88px;height:88px;display:block">
       <p style="margin:16px 0 0;font-size:14px;color:#6A6A72;max-width:38ch;text-wrap:pretty">Real World Observations of Image and Performance Enhancing Drug Trends. A research program of The University of Queensland, delivered with PEDTest, QuIVAA and QuIHN.</p>
+      <p style="margin:12px 0 0;font-size:13px;color:#6A6A72">Ethics approval: 2026/HE010435</p>
     </div>
     <div style="display:flex;flex-direction:column;gap:10px;font-size:15px">
       <a href="About.dc.html">About the Study</a>
       <a href="Findings.dc.html">Research Findings</a>
+      <a href="Bulletins.dc.html">Bulletins</a>
       <a href="Resources.dc.html">Harm Reduction Resources</a>
       <a href="Contact.dc.html">Contact</a>
     </div>
@@ -116,13 +128,14 @@ class Component extends DCLogic {
   renderVals() {
     return {
       team: [
-        { name: 'Jason Ferris', role: 'Lead Chief Investigator · biostatistics & secure data, UQ' },
-        { name: 'Timothy Piatkowski', role: 'Chief Investigator · NHMRC Emerging Leadership Fellow' },
-        { name: 'Kim Akrigg', role: 'Chief Investigator · Senior Research Assistant' },
-        { name: 'Ben Bonenti', role: 'Chief Investigator · data infrastructure & analytics' },
-        { name: 'Emma Kill', role: 'Chief Investigator · policy & AOD sector leadership' },
-        { name: 'Geoff Davey', role: 'Chief Investigator · service delivery' },
-        { name: 'Ali Craven', role: 'Chief Investigator · sector partnerships' }
+        { name: 'Timothy Piatkowski', role: 'Lead Researcher · Senior Research Fellow & NHMRC Emerging Leadership Fellow, UQ' },
+        { name: 'Kim Akrigg', role: 'PhD Candidate & Senior Research Assistant, UQ · survey design & data management' },
+        { name: 'Ali Craven', role: 'CEO, PEDTest · Industry Fellow, UQ · data collection, platform hosting & community engagement' },
+        { name: 'Jason Ferris', role: 'Substance Use Epidemiologist & Deputy Director, Data Science Collaborative Research Platform, UQ · methodological guidance' },
+        { name: 'Ben Bonenti', role: 'Senior Research Assistant, UQ · data management & analysis' },
+        { name: 'Emma Kill', role: 'CEO, QuIVAA · community engagement & cultural safety' },
+        { name: 'Sonya Weith', role: 'Peer Educator, Steroid QNECT, QuIVAA · community liaison' },
+        { name: 'Geoff Davey', role: 'CEO, QuIHN · community engagement & partnership' }
       ]
     };
   }

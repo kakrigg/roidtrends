@@ -15,15 +15,25 @@ a{color:#B96FD8;text-decoration:none}
 a:hover{color:#FFFFFF}
 ::selection{background:#48055E;color:#FFFFFF}
 :focus-visible{outline:2px solid #B96FD8;outline-offset:2px}
+.navdrop{position:relative}
+.navdrop-menu{display:none;position:absolute;top:100%;left:-20px;padding-top:14px;z-index:50}
+.navdrop:hover .navdrop-menu,.navdrop:focus-within .navdrop-menu{display:block}
 input,textarea,button{font-family:'Archivo',sans-serif}
 </style>
 </helmet>
 <div style="height:10px;background:#48055E"></div>
-<header style="max-width:1440px;margin:0 auto;padding:28px clamp(20px,5vw,80px);display:flex;justify-content:space-between;align-items:flex-start;gap:24px">
+<header style="max-width:1440px;margin:0 auto;padding:28px clamp(20px,5vw,80px);display:flex;justify-content:space-between;align-items:flex-start;gap:24px;flex-wrap:wrap">
   <nav style="display:flex;gap:32px;flex-wrap:wrap;font-family:'Archivo Narrow',sans-serif;text-transform:uppercase;letter-spacing:0.22em;font-size:13px;font-weight:600;padding-top:6px">
     <a href="Home.dc.html" style="color:#B96FD8">Home</a>
     <a href="About.dc.html" style="color:#B96FD8">About</a>
-    <a href="Findings.dc.html" style="color:#B96FD8">Findings</a>
+    <div class="navdrop">
+      <a href="Findings.dc.html" style="color:#B96FD8">Findings <span aria-hidden="true" style="font-size:10px">▾</span></a>
+      <div class="navdrop-menu">
+        <div style="background:#141416;border:1px solid #44444C;min-width:200px">
+          <a href="Bulletins.dc.html" style="display:block;padding:14px 20px;color:#FFFFFF;white-space:nowrap" style-hover="background:#48055E">Bulletins</a>
+        </div>
+      </div>
+    </div>
     <a href="Resources.dc.html" style="color:#B96FD8">Resources</a>
     <a href="Contact.dc.html" style="color:#FFFFFF">Contact</a>
   </nav>
@@ -61,12 +71,14 @@ input,textarea,button{font-family:'Archivo',sans-serif}
 <footer style="border-top:1px solid #44444C">
   <div style="max-width:1440px;margin:0 auto;padding:56px clamp(20px,5vw,80px);display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:48px">
     <div>
-      <span style="font-weight:800;font-size:15px;line-height:0.95;letter-spacing:0.04em;color:#FFFFFF">ROID<br>TRENDS</span>
+      <img src="assets/roidtrends-logo-white.svg" alt="ROIDTrends" style="width:88px;height:88px;display:block">
       <p style="margin:16px 0 0;font-size:14px;color:#6A6A72;max-width:38ch;text-wrap:pretty">Real World Observations of Image and Performance Enhancing Drug Trends. A research program of The University of Queensland, delivered with PEDTest, QuIVAA and QuIHN.</p>
+      <p style="margin:12px 0 0;font-size:13px;color:#6A6A72">Ethics approval: 2026/HE010435</p>
     </div>
     <div style="display:flex;flex-direction:column;gap:10px;font-size:15px">
       <a href="About.dc.html">About the Study</a>
       <a href="Findings.dc.html">Research Findings</a>
+      <a href="Bulletins.dc.html">Bulletins</a>
       <a href="Resources.dc.html">Harm Reduction Resources</a>
       <a href="Contact.dc.html">Contact</a>
     </div>

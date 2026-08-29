@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&amp;family=Archivo+Narrow:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0A0A0A;color:#B8B8BE;font-family:'Archivo',sans-serif;font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:#B96FD8;text-decoration:none}
+a:hover{color:#FFFFFF}
+::selection{background:#48055E;color:#FFFFFF}
+:focus-visible{outline:2px solid #B96FD8;outline-offset:2px}
+.navdrop{position:relative}
+.navdrop-menu{display:none;position:absolute;top:100%;left:-20px;padding-top:14px;z-index:50}
+.navdrop:hover .navdrop-menu,.navdrop:focus-within .navdrop-menu{display:block}
+</style>
+</helmet>
+<div style="height:10px;background:#48055E"></div>
+<header style="max-width:1440px;margin:0 auto;padding:28px clamp(20px,5vw,80px);display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap">
+  <nav style="display:flex;gap:32px;flex-wrap:wrap;font-family:'Archivo Narrow',sans-serif;text-transform:uppercase;letter-spacing:0.22em;font-size:13px;font-weight:600">
+    <a href="Home.dc.html" style="color:#B96FD8">Home</a>
+    <a href="About.dc.html" style="color:#B96FD8">About</a>
+    <div class="navdrop">
+      <a href="Findings.dc.html" style="color:#FFFFFF">Findings <span aria-hidden="true" style="font-size:10px">▾</span></a>
+      <div class="navdrop-menu">
+        <div style="background:#141416;border:1px solid #44444C;min-width:200px">
+          <a href="Bulletins.dc.html" style="display:block;padding:14px 20px;color:#FFFFFF;white-space:nowrap" style-hover="background:#48055E">Bulletins</a>
+        </div>
+      </div>
+    </div>
+    <a href="Resources.dc.html" style="color:#B96FD8">Resources</a>
+    <a href="Contact.dc.html" style="color:#B96FD8">Contact</a>
+  </nav>
+  <a href="Home.dc.html" aria-label="ROIDTrends home" style="display:block">
+    <img src="assets/roidtrends-logo-white.svg" alt="ROIDTrends" style="width:clamp(120px,26vw,332px);height:auto;display:block">
+  </a>
+</header>
+<main>
+  <section style="max-width:1440px;margin:0 auto;padding:56px clamp(20px,5vw,80px) 48px">
+    <p style="margin:0 0 20px"><a href="Bulletins.dc.html" style="font-family:'Archivo Narrow',sans-serif;text-transform:uppercase;letter-spacing:0.22em;font-size:13px;font-weight:600">← All Bulletins</a></p>
+    <span style="display:inline-block;font-family:'Archivo Narrow',sans-serif;text-transform:uppercase;letter-spacing:0.18em;font-size:12px;font-weight:700;color:#B96FD8;border:1px solid #48055E;padding:6px 12px;margin-bottom:24px">Half Year Laboratory Summary</span>
+    <h1 style="margin:0;max-width:26ch;font-size:clamp(36px,4.2vw,60px);line-height:1.05;font-weight:800;color:#FFFFFF;text-wrap:balance">What's actually in the vial? Half Year Laboratory Testing Summary</h1>
+    <p style="margin:20px 0 0;font-family:'Archivo Narrow',sans-serif;text-transform:uppercase;letter-spacing:0.22em;font-size:14px;font-weight:600;color:#8A8A92">January – June 2026 · IPED Trends Series</p>
+    <p style="margin:32px 0 0;max-width:66ch;font-size:19px;line-height:1.55;color:#B8B8BE;text-wrap:pretty">Half Year Laboratory Summaries report the results of independent laboratory analysis of image and performance enhancing drug products submitted by consumers and purchased from the unregulated market. Each product is tested for what compound it actually contains and at what concentration, then compared against the seller's label, giving a six-monthly picture of how reliably labels on the Australian IPED market reflect what is in the vial.</p>
+    <div style="display:flex;gap:16px;margin-top:40px;flex-wrap:wrap">
+      <a href="assets/ROIDTrends-Half-Year-Laboratory-Testing-Summary-Jan-Jun-2026.pdf" download="ROIDTrends Half Year Laboratory Testing Summary Jan-Jun 2026.pdf" style="display:inline-flex;align-items:center;min-height:48px;padding:0 28px;background:#48055E;color:#FFFFFF;font-weight:700;font-size:16px" style-hover="background:#B96FD8;color:#0A0A0A">Download the Bulletin (PDF)</a>
+      <a href="Contact.dc.html" style="display:inline-flex;align-items:center;min-height:48px;padding:0 28px;border:2px solid #B96FD8;color:#B96FD8;font-weight:700;font-size:16px" style-hover="border-color:#FFFFFF;color:#FFFFFF">Contact ROIDTrends</a>
+    </div>
+  </section>
+  <section style="max-width:1440px;margin:0 auto;padding:32px clamp(20px,5vw,80px) 0">
+    <h2 style="margin:0 0 32px;font-size:clamp(28px,3vw,40px);font-weight:800;color:#FFFFFF">Key Findings</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(480px,100%),1fr));gap:32px">
+      <figure style="margin:0;border:1px solid #44444C">
+        <img src="assets/bulletin-2026h1-peptides.png" alt="Infographic: peptide laboratory results, January to June 2026. 6 of 7 samples contained the correct ingredient; 7 of 7 did not match the labelled dose." style="width:100%;height:auto;display:block">
+      </figure>
+      <figure style="margin:0;border:1px solid #44444C">
+        <img src="assets/bulletin-2026h1-steroids.png" alt="Infographic: steroid laboratory results, January to June 2026. 5 of 20 products matched their label on both steroid and dose; 6 held a steroid not named on the label." style="width:100%;height:auto;display:block">
+      </figure>
+    </div>
+  </section>
+  <section style="max-width:1440px;margin:0 auto;padding:64px clamp(20px,5vw,80px) 0">
+    <div style="max-width:820px">
+      <h2 style="margin:0 0 24px;font-size:clamp(24px,2.4vw,32px);font-weight:800;color:#FFFFFF">Key Takeaways</h2>
+      <ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:18px">
+        <li style="display:flex;gap:16px;align-items:baseline"><span aria-hidden="true" style="flex:none;width:10px;height:10px;background:#B96FD8;transform:translateY(-1px)"></span><span style="font-size:18px;color:#E4E4E8">Only 12 of 26 products matched both the labelled compound and the labelled dose.</span></li>
+        <li style="display:flex;gap:16px;align-items:baseline"><span aria-hidden="true" style="flex:none;width:10px;height:10px;background:#B96FD8;transform:translateY(-1px)"></span><span style="font-size:18px;color:#E4E4E8">6 of 20 steroid vials held a steroid not named on the label.</span></li>
+        <li style="display:flex;gap:16px;align-items:baseline"><span aria-hidden="true" style="flex:none;width:10px;height:10px;background:#B96FD8;transform:translateY(-1px)"></span><span style="font-size:18px;color:#E4E4E8">Three Retatrutide vials, all labelled 10 mg, ranged from 5.13 mg to 19 mg, one vial delivering close to four times another.</span></li>
+      </ul>
+    </div>
+  </section>
+  <section style="max-width:1440px;margin:0 auto;padding:64px clamp(20px,5vw,80px) 0">
+    <div style="max-width:820px;display:flex;flex-direction:column;gap:40px">
+      <div>
+        <h2 style="margin:0 0 16px;font-family:'Archivo Narrow',sans-serif;text-transform:uppercase;letter-spacing:0.22em;font-size:13px;font-weight:700;color:#B96FD8">Recommended Citation</h2>
+        <p style="margin:0;font-size:15px;line-height:1.7;color:#8A8A92;border-left:3px solid #48055E;padding-left:20px;text-wrap:pretty">Akrigg K., Bonenti B., Craven A., Davey G., Ferris J., Kill E., Weith S., Piatkowski T. ROIDTrends Half Year Laboratory Testing Summary 2026, January 2026 – June 2026. IPED Trends Series. UQ, Queensland; 2026. DOI: <a href="https://doi.org/10.14264/8651cba" target="_blank">https://doi.org/10.14264/8651cba</a></p>
+      </div>
+      <div>
+        <h2 style="margin:0 0 16px;font-family:'Archivo Narrow',sans-serif;text-transform:uppercase;letter-spacing:0.22em;font-size:13px;font-weight:700;color:#B96FD8">Funding</h2>
+        <p style="margin:0;font-size:15px;line-height:1.7;color:#8A8A92;text-wrap:pretty">ROIDTrends is funded by the Queensland Mental Health Commission.</p>
+      </div>
+      <div>
+        <h2 style="margin:0 0 16px;font-family:'Archivo Narrow',sans-serif;text-transform:uppercase;letter-spacing:0.22em;font-size:13px;font-weight:700;color:#B96FD8">Copyright</h2>
+        <p style="margin:0;font-size:15px;line-height:1.7;color:#8A8A92;text-wrap:pretty">This work is copyright. You may download, display, print and reproduce this material in unaltered form only (retaining this notice) for your personal, non-commercial use or use within your organisation. All other rights are reserved. Requests and enquiries concerning reproduction and rights should be addressed to the <a href="mailto:t.piatkowski@uq.edu.au">information manager</a>.</p>
+      </div>
+    </div>
+  </section>
+  <section style="max-width:1440px;margin:0 auto;padding:88px clamp(20px,5vw,80px) 96px">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px">
+      <a href="About.dc.html" style="display:flex;flex-direction:column;gap:12px;padding:32px;background:#141416;border:1px solid #44444C;color:#B8B8BE" style-hover="border-color:#B96FD8">
+        <span style="font-family:'Archivo Narrow',sans-serif;text-transform:uppercase;letter-spacing:0.18em;font-size:12px;font-weight:700;color:#B96FD8">The People</span>
+        <span style="font-size:22px;font-weight:700;color:#FFFFFF">Learn About the Team →</span>
+        <span style="font-size:15px;color:#8A8A92">Meet the researchers behind ROIDTrends.</span>
+      </a>
+      <a href="About.dc.html" style="display:flex;flex-direction:column;gap:12px;padding:32px;background:#141416;border:1px solid #44444C;color:#B8B8BE" style-hover="border-color:#B96FD8">
+        <span style="font-family:'Archivo Narrow',sans-serif;text-transform:uppercase;letter-spacing:0.18em;font-size:12px;font-weight:700;color:#B96FD8">The Study</span>
+        <span style="font-size:22px;font-weight:700;color:#FFFFFF">Learn About the Program →</span>
+        <span style="font-size:15px;color:#8A8A92">How ROIDTrends monitors the IPED market.</span>
+      </a>
+      <a href="Contact.dc.html" style="display:flex;flex-direction:column;gap:12px;padding:32px;background:#141416;border:1px solid #44444C;color:#B8B8BE" style-hover="border-color:#B96FD8">
+        <span style="font-family:'Archivo Narrow',sans-serif;text-transform:uppercase;letter-spacing:0.18em;font-size:12px;font-weight:700;color:#B96FD8">Get in Touch</span>
+        <span style="font-size:22px;font-weight:700;color:#FFFFFF">Contact Us →</span>
+        <span style="font-size:15px;color:#8A8A92">Questions, samples, media and collaboration.</span>
+      </a>
+    </div>
+  </section>
+</main>
+<footer style="border-top:1px solid #44444C">
+  <div style="max-width:1440px;margin:0 auto;padding:56px clamp(20px,5vw,80px);display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:48px">
+    <div>
+      <img src="assets/roidtrends-logo-white.svg" alt="ROIDTrends" style="width:88px;height:88px;display:block">
+      <p style="margin:16px 0 0;font-size:14px;color:#6A6A72;max-width:38ch;text-wrap:pretty">Real World Observations of Image and Performance Enhancing Drug Trends. A research program of The University of Queensland, delivered with PEDTest, QuIVAA, QuIHN and the Queensland Mental Health Commission.</p>
+      <p style="margin:12px 0 0;font-size:13px;color:#6A6A72">Ethics approval: 2026/HE010435</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:10px;font-size:15px">
+      <a href="About.dc.html">About the Study</a>
+      <a href="Findings.dc.html">Research Findings</a>
+      <a href="Bulletins.dc.html">Bulletins</a>
+      <a href="Resources.dc.html">Harm Reduction Resources</a>
+      <a href="Contact.dc.html">Contact</a>
+    </div>
+    <div>
+      <p style="margin:0;font-size:13px;color:#6A6A72;max-width:44ch;text-wrap:pretty">ROIDTrends acknowledges the Traditional Owners of the lands on which we work, and pays respect to Elders past, present, and emerging.</p>
+      <p style="margin:14px 0 0;font-size:13px;color:#6A6A72">© ROIDTrends 2026</p>
+    </div>
+  </div>
+</footer>
+</x-dc>
+</body>
+</html>

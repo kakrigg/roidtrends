@@ -16,6 +16,9 @@ a{color:#B96FD8;text-decoration:none}
 a:hover{color:#FFFFFF}
 ::selection{background:#48055E;color:#FFFFFF}
 :focus-visible{outline:2px solid #B96FD8;outline-offset:2px}
+.navdrop{position:relative}
+.navdrop-menu{display:none;position:absolute;top:100%;left:-20px;padding-top:14px;z-index:50}
+.navdrop:hover .navdrop-menu,.navdrop:focus-within .navdrop-menu{display:block}
 </style>
 </helmet>
 <div style="height:10px;background:#48055E"></div>
@@ -28,11 +31,18 @@ a:hover{color:#FFFFFF}
     </div>
   </div>
 </sc-if>
-<header style="max-width:1440px;margin:0 auto;padding:28px clamp(20px,5vw,80px);display:flex;justify-content:space-between;align-items:center;gap:24px">
+<header style="max-width:1440px;margin:0 auto;padding:28px clamp(20px,5vw,80px);display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap">
   <nav style="display:flex;gap:32px;flex-wrap:wrap;font-family:'Archivo Narrow',sans-serif;text-transform:uppercase;letter-spacing:0.22em;font-size:13px;font-weight:600">
     <a href="Home.dc.html" style="color:#FFFFFF">Home</a>
     <a href="About.dc.html" style="color:#B96FD8">About</a>
-    <a href="Findings.dc.html" style="color:#B96FD8">Findings</a>
+    <div class="navdrop">
+      <a href="Findings.dc.html" style="color:#B96FD8">Findings <span aria-hidden="true" style="font-size:10px">▾</span></a>
+      <div class="navdrop-menu">
+        <div style="background:#141416;border:1px solid #44444C;min-width:200px">
+          <a href="Bulletins.dc.html" style="display:block;padding:14px 20px;color:#FFFFFF;white-space:nowrap" style-hover="background:#48055E">Bulletins</a>
+        </div>
+      </div>
+    </div>
     <a href="Resources.dc.html" style="color:#B96FD8">Resources</a>
     <a href="Contact.dc.html" style="color:#B96FD8">Contact</a>
   </nav>
@@ -46,7 +56,7 @@ a:hover{color:#FFFFFF}
     <h1 style="margin:0;max-width:22ch;font-size:clamp(44px,5.4vw,80px);line-height:1.0;font-weight:800;color:#FFFFFF;text-wrap:balance">Reducing harms for people who use image and performance enhancing drugs</h1>
     <p style="margin:36px 0 0;max-width:62ch;font-size:21px;line-height:1.5;color:#B8B8BE;text-wrap:pretty">ROIDTrends: Real World Observations of Image and Performance Enhancing Drug Trends, turns community drug-checking results into public data on the substances circulating in Australia's unregulated IPED market.</p>
     <div style="display:flex;gap:16px;margin-top:44px;flex-wrap:wrap">
-      <a href="https://doi.org/10.14264/8651cba" target="_blank" style="display:inline-flex;align-items:center;min-height:44px;padding:0 28px;background:#48055E;color:#FFFFFF;font-weight:700;font-size:16px" style-hover="background:#B96FD8;color:#0A0A0A">Read the Latest Bulletin</a>
+      <a href="Bulletin-Half-Year-Summary-2026.dc.html" style="display:inline-flex;align-items:center;min-height:44px;padding:0 28px;background:#48055E;color:#FFFFFF;font-weight:700;font-size:16px" style-hover="background:#B96FD8;color:#0A0A0A">Read the Latest Bulletin</a>
     </div>
   </section>
   <sc-if value="{{ marqueeOn }}" hint-placeholder-val="{{ true }}">
@@ -138,6 +148,7 @@ a:hover{color:#FFFFFF}
     <div>
       <img src="assets/roidtrends-logo-white.svg" alt="ROIDTrends" style="width:88px;height:88px;display:block">
       <p style="margin:16px 0 0;font-size:14px;color:#6A6A72;max-width:38ch;text-wrap:pretty">Real World Observations of Image and Performance Enhancing Drug Trends. A research program of The University of Queensland, delivered with PEDTest, QuIVAA, QuIHN and the Queensland Mental Health Commission.</p>
+      <p style="margin:12px 0 0;font-size:13px;color:#6A6A72">Ethics approval: 2026/HE010435</p>
     </div>
     <div style="display:flex;flex-direction:column;gap:10px;font-size:15px">
       <a href="About.dc.html">About the Study</a>
